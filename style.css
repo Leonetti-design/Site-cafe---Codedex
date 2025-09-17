@@ -1,0 +1,29 @@
+body {
+  font-family: 'Comic Sans MS', cursive; /* ou une police kawaii importée */
+  background-color: #fff8e7;
+  color: #5a3e2b;
+  text-align: center;
+  align-content: center;
+}
+
+#menu-section {
+    background-color: bisque;
+}
+
+.item {
+width: 200px;
+}
+
+
+.head-section {
+    width: 100%;
+}
+
+header {
+  background: #ffda77;
+}
+
+footer {
+  background: #5a3e2b ;
+  color: bisque;
+}
