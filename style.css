@@ -1,29 +1,150 @@
 body {
-  font-family: 'Comic Sans MS', cursive; /* ou une police kawaii importée */
+  font-family: 'Comic Sans MS', cursive;
   background-color: #fff8e7;
-  color: #5a3e2b;
+  color: #76332E;
   text-align: center;
-  align-content: center;
+  height: 100vh;
+  width:100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-#menu-section {
-    background-color: bisque;
+    body {	
+    cursor:url(https://purin.arunyi.art/assets/images/gallery01/f70e834b.gif?v=39d01017),auto;
+    }
+
+h1{
+     word-wrap: break-word;
+}
+
+a{
+    color: #76332e;
+}
+
+.title{
+font-family:Daydream;
+}
+
+
+#content{
+    justify-content: center;
+    margin-left:20%;
+    margin-right:20%;
+    
+    
+}
+
+#menu-section, #order-section {
+    margin-bottom: 20px;
+
+}
+ 
+.head-section {
+    width: 100%;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+}
+
+
+
+.white-section{
+    padding-top: 20px;
+    background-color: #FFFEF6;
+    border-radius: 0% 0% 2em 2em;
+    box-shadow: 0px 5px #2b230c39;
 }
 
 .item {
-width: 200px;
+width: 150px;
 }
 
-
-.head-section {
-    width: 100%;
+.line {
+    gap: 100px;
+    align-items: center;
+    justify-content:center;
 }
+
+/*Forms*/
+    input {
+        width: 60%;
+    }
+
+    input[type=text],input[type=number],textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #76332e;;
+    border-radius: 8px;
+    box-sizing: border-box;
+    }
+
+    #button{
+    background-color: #76332E;
+    color: #FFFEF6;
+    font-family:Daydream;
+    border-radius: 25px;
+    padding: 10px;
+    width: 50%;
+    }
+
+        #button:hover{
+        transform: scale(1.1);
+        background-color: #481b18;
+        transition: 0.5s;
+        transition-delay: 0,3s;
+        }
+
+    select {
+    border: 2px solid #dddddd;
+    background: #eeeeee;
+    padding: 10px;
+    transition: 0.4s;
+    }
+
+        select,
+        ::picker(select) {
+        appearance: base-select;
+        }
+
+        select:hover,
+        select:focus {
+        background: #dddddd;
+        }
+
+        select::picker-icon {
+        color: #999999;
+        transition: 0.4s rotate;
+        }
+
+        select:open::picker-icon {
+        rotate: 180deg;
+        }
+
+
 
 header {
-  background: #ffda77;
+  background: #76332E;;
+  max-width: 100%;
+  color: #FDD35D;
+  border-radius: 1em;
+  padding: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+    margin-left:20%;
+    margin-right:20%;
 }
 
 footer {
-  background: #5a3e2b ;
-  color: bisque;
+  padding: 1vh;
+  font-size: 1.5rem;
+  font-family:daydream ;
+  background-color: #76332E ;
+  color: #FDD35D;
 }
+
+       footer a {
+            color: #f5e6c8;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+       }
