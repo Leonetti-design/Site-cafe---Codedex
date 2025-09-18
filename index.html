@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <!--Be kind with this project, I just wanna do some cute stuff 🤗-->
 
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pompompurin Café 🐶💛</title>
+        <link rel="icon" type="gif" href="https://purin.arunyi.art/assets/images/gallery01/b18207b5.gif?v=39d01017">
+        
+
+
 
          <!--CSS link-->
         <link rel="stylesheet" href="style.css">
@@ -13,82 +18,108 @@
 
 
 <body>
+
     <header>
-        <h1>Pompompurin Café 🐶💛</h1>
-        <img id="header-img">
-        <img id="header-img2" src="images/img_1.jpg" alt="Pompompurin is baking">
-        <figcaption>It looks like a cute café from the outside</figcaption>
+        <h1 class="title">Pompompurin Cafe</h1>
+        <img id="header-img" src="images/header.png" alt="Pompompurin is baking" width="100%">
     </header>
 
     <main>
-        <body background="images/bg.png"
+        <body background="images/bg.png"></body>
 
-<!--Menu Section-->
-        <div id="menu-section">
-            <h2>Menu</h2>
-            <p>Some informations</p>
-            <article>
-                <img src="images/item1.jpg" alt="Parfait">
-                <h3>Perfect Parfait</h3>
-                <p>A delightful mango parfait, as sunny as it is sweet🌼🥭✨</p>
-                <p>$8.00</p>
-            </article>
+    <div id="content">
 
-             <article>
-                <img src="images/item2.png" alt="Pudding">
-                <h3>Pompompurin's Pudding</h3>
-                <p>A sweet, cozy pudding served on a lovely little plate. 🍮✨</p>
-                <p>$11.00</p>
-            </article>
+    <!--Menu Section-->
+        <div id="menu-section" >
 
-             <article>
-                <img src="images/item3.jpg" alt="Hot Chocolate">
-                <h3>Hot Chocolate</h3>
-                <p>A rich, creamy hot chocolate in a cute, cozy mug. ☕✨</p>
-                <p>$9.00</p>
-            </article>
-            <br><br>
+            <img class="head-section" src="images/title_menu.png">
+            <section class="white-section">
 
+                <h2 class="title">Our desserts</h2>
+                <p>Make your choice !</p>
+                <br><br>
+                <article class="line">
+                    <img class="item" src="images/item1.gif" alt="Parfait">
+                    <h3>Perfect Parfait</h3>
+                    <p>A delightful mango parfait, as sunny as it is sweet🥭✨</p>
+                    <p>$8.00</p>
+                </article>
+
+                <article class="line">
+                    <img class="item" src="images/item2.gif" alt="Pudding">
+                    <h3>Pompompurin's Pudding</h3>
+                    <p>A sweet, cozy pudding served on a lovely little plate. 🍮✨</p>
+                    <p>$11.00</p>
+                </article>
+
+                <article class="line">
+                    <img class="item" src="images/item3.gif" alt="Hot Chocolate">
+                    <h3>Hot Chocolate</h3>
+                    <p>A rich, creamy hot chocolate in a cute, cozy mug. ☕✨</p>
+                    <p>$9.00</p>
+                </article>
+
+               
+             <br><br>
+
+            </section>
         </div>
 
         
 <!--Order Form-->
         <div id="order-section">
-            <a href="https://www.instagram.com/laptite_crevette/?hl=fr"><h2>Place Your Order</h2></a>
+             <img class="head-section" src="images/title_order.png">
+             <section class="white-section">
+                <a href="https://www.instagram.com/laptite_crevette/?hl=fr" class="title"><h2>Place Your Order</h2></a>
 
-            <form>
+                 <form>
+                    
+                    <label for="name"Name><b>⭐ Name ⭐</b></label>
+                    <br>
+                    <input type="text" id="name"> <br><br>
 
-                <label for="name"Name>Name</label>
-                <input type="text" id="name"> <br><br>
+                    
+                    <label for="item"> <b>Select an item:</b></label><br>
+                        <select id="item" name="item">
+                        <br>
+                            <option value="Parfait">🥭Parfait</option>
+                            <option value="Pudding">🍮 Pudding </option>
+                            <option value="Chocolate">☕ Hot Chocolate</option>
+                        </select><br><br>
 
-                <label for="item"> Select an item: </label>
-                <select id="item" name="item">
-                    <option value="Parfait">Parfait</option>
-                    <option value="Pudding">Pudding</option>
-                    <option value="Chocolate">Hot Chocolate</option>
-                </select>
 
-                <label for="quantity">Quantity</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="10"> 
-                <br><br>
-                <label for="comments">Comments</label>
-                <br>
-                <textarea name="comments" rows="4" cols="'50"></textarea>
-                <br><br>
-                <input type="Submit" value="Go to Checkout">
+                    <label for="quantity"><b>⭐ Quantity ⭐</b></label> <br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10"> 
+                        <br><br>
 
-            </form>
-        
+
+                    <label for="comments"><b>Comments</b></label>
+                        <br>
+                        <textarea name="comments" rows="4" cols="'50"></textarea>
+                        <br><br>
+                        <input id="button" type="submit" value="Checkout">
+                        <br><br>
+
+                 </form>
+            </section>
 
         </div>
 
-
-
+</div>
     </main>
 
     <footer>
-        <p>With Love by <a href="https://www.instagram.com/laptite_crevette/?hl=fr">@Leonetti</a></p>
+        <p>With Love by <a href="https://www.instagram.com/laptite_crevette/?hl=fr">Leonetti</a></p>
     </footer>
+    
 </body>
 
+<!--I did the item's gif but not the rest!
+
+🔸Header image --- Sanrio artist
+🔸Background pattern --- Pompompurin café official
+🔸Flavicon --- is from https://purin.arunyi.art/#goodies
+
+I will try next to do my own header image with pixel art 🔥
+-->
 </html>
