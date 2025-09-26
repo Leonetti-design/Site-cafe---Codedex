@@ -134,7 +134,16 @@ header {
     margin-right:20%;
 }
 
-footer {
+.nav-link {
+    color: #f5e6c8;
+    text-decoration: none;
+    font-family: daydream; }
+
+    .nav-link:hover {
+        color: #FDD35D;
+    }
+
+footer{
   padding: 1vh;
   font-size: 1.5rem;
   font-family:daydream ;
